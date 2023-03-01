@@ -21,5 +21,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
     - run: geckodriver --version
-    - name: Build project with Maven
-      run: mvn -B package --file pom.xml
+    - name: MVN Version
+      run: mvn --version
+    - name: JAVA version
+      run: java --version
